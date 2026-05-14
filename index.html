@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sakshay Website</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
   <style>
     body {
       margin: 0;
@@ -12,65 +11,30 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      background: linear-gradient(135deg, #111, #333);
       font-family: Arial, sans-serif;
-      overflow: hidden;
+      color: white;
     }
 
     h1 {
-      color: white;
-      font-size: 4rem;
+      font-size: 3rem;
       text-align: center;
-      animation: glow 2s infinite alternate;
-      text-shadow: 0 0 10px #fff, 0 0 20px #00e5ff;
+      animation: glow 1.5s infinite alternate;
     }
 
     @keyframes glow {
       from {
-        transform: scale(1);
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff0000;
       }
       to {
-        transform: scale(1.08);
-      }
-    }
-
-    .bubble {
-      position: absolute;
-      bottom: -100px;
-      width: 40px;
-      height: 40px;
-      background: rgba(255,255,255,0.2);
-      border-radius: 50%;
-      animation: float 10s linear infinite;
-    }
-
-    @keyframes float {
-      from {
-        transform: translateY(0);
-      }
-      to {
-        transform: translateY(-120vh);
+        text-shadow: 0 0 20px #fff, 0 0 40px #00ffcc;
       }
     }
   </style>
 </head>
 <body>
 
-  <h1>🔥 Sakshay kesa hai bete 🔥</h1>
-
-  <script>
-    for (let i = 0; i < 20; i++) {
-      let bubble = document.createElement("div");
-      bubble.classList.add("bubble");
-
-      bubble.style.left = Math.random() * 100 + "vw";
-      bubble.style.animationDuration = (5 + Math.random() * 5) + "s";
-      bubble.style.width = bubble.style.height =
-        (20 + Math.random() * 50) + "px";
-
-      document.body.appendChild(bubble);
-    }
-  </script>
+  <h1>ashish loda lele</h1>
 
 </body>
 </html>
